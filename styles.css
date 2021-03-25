@@ -1,0 +1,321 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+:root {
+  --primary-color: #02066f;
+  --secondary-color: #ff073a;
+  --tertiary-color: #00022e;
+  --text-color: #fff;
+  --grey-color: #d1d5db;
+}
+
+/* Links Styling */
+
+a:link {
+  text-decoration: none;
+  color: #fff;
+}
+
+a:visited {
+  text-decoration: none;
+  color: #fff;
+}
+
+/* BODY COMMANDS */
+
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Navigation */
+
+.navigation {
+  background-color: var(--primary-color);
+  padding: 0.5rem 0.2rem;
+  margin: 0;
+  width: 100%;
+}
+
+.nav-links {
+  width: 10rem;
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  color: var(--text-color);
+}
+
+@media screen and (min-width: 450px) {
+  .navigation {
+    background-color: var(--primary-color);
+    padding: 0.5rem 0.2rem;
+    margin: 0;
+  }
+
+  .nav-links {
+    width: 10rem;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: var(--text-color);
+  }
+}
+
+/* Heading */
+
+.main-heading {
+  color: var(--secondary-color);
+}
+
+/* Avatar Images */
+.avatar-img {
+  height: 5rem;
+  width: 5rem;
+  border-radius: 50%;
+}
+
+.avatar-img.md {
+  height: 8rem;
+  width: 8rem;
+  border-radius: 50%;
+}
+
+.avatar-img.lg {
+  height: 12rem;
+  width: 12rem;
+  border-radius: 50%;
+}
+
+/* Alert Messages */
+.alert {
+  width: 50%;
+  padding: 0.3rem;
+  border: 1px solid transparent;
+  border-radius: 0.5rem;
+}
+
+.alert-success {
+  background-color: #d1e7dd;
+  border-color: #ade2bc;
+  color: #0f5132;
+}
+
+.alert-warning {
+  background-color: #fff3cd;
+  border-color: #fff3cd;
+  color: #664d03;
+}
+
+.alert-important {
+  background-color: #e2e3e5;
+  border-color: #d3d6d8;
+  color: #41464b;
+}
+
+.alert-danger {
+  background-color: #f8d7da;
+  border-color: #f5c2c7;
+  color: #842029;
+}
+
+/* Badges */
+
+.badge {
+  padding-top: 0.05;
+  padding-bottom: 0.05;
+  text-align: center;
+  border-radius: 0.5rem;
+  width: 6rem;
+}
+
+.badge-primary {
+  background-color: #6c757d;
+  color: #fff;
+}
+
+.badge-secondary {
+  background-color: #fff;
+  color: #6c757d;
+  border: 1px solid #6c757d;
+}
+
+/* Badges with Notification */
+
+.notif {
+  width: 0.7rem;
+  height: 0.7rem;
+  border-radius: 50%;
+  background-color: red;
+  position: absolute;
+  top: 3.5rem;
+  left: 4.3rem;
+}
+
+.avatar-badge-notification {
+  position: relative;
+}
+
+/* Button */
+
+.primary-button {
+  width: 6rem;
+  height: auto;
+  background-color: var(--primary-color);
+  color: #fff;
+  text-align: center;
+  border-radius: 0.5rem;
+  padding: 0.05rem;
+  border: 1px solid var(--primary-color);
+  cursor: pointer;
+}
+
+.secondary-button {
+  height: auto;
+  background-color: #fff;
+  color: var(--primary-color);
+  text-align: center;
+  border-radius: 0.5rem;
+  padding: 0.05rem;
+  width: 6rem;
+  border: 1px solid var(--primary-color);
+  cursor: pointer;
+}
+
+.floating-button {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  background-color: var(--primary-color);
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  color: #fff;
+}
+
+.plus-button {
+  align-self: center;
+}
+
+/* Cards */
+
+.text-only-cards {
+  width: 15rem;
+  background-color: #e5e7eb;
+  height: 20rem;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.card-title {
+  align-self: center;
+}
+
+.vertical-card {
+  width: 15rem;
+  background-color: #e5e7eb;
+  height: 20rem;
+}
+
+.horizontal-card {
+  width: 20rem;
+  background-color: #e5e7eb;
+  height: 15rem;
+}
+
+/* Images */
+
+.responsive-image {
+  width: 16rem;
+  height: auto;
+}
+
+.round {
+  width: 16rem;
+  height: 16rem;
+  border-radius: 50%;
+}
+
+/* Lists */
+
+/* Stacked Lists */
+
+.list-group {
+  list-style-type: none;
+}
+
+.list-item {
+  width: 40%;
+  border: 1px solid var(--grey-color);
+  padding: 0.5rem;
+}
+
+/* Spaced Lists */
+
+.spaced {
+  margin-bottom: 1rem;
+}
+
+/* Modals */
+
+.modal-box {
+  width: 20rem;
+  border: 1px solid var(--grey-color);
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  padding: 0rem;
+}
+
+.modal-title {
+  grid-row: 1/2;
+  padding: 0.05rem;
+  text-align: center;
+  border-bottom: 1px solid var(--grey-color);
+}
+
+.modal-text {
+  grid-row: 2/3;
+  padding: 2rem;
+  border-bottom: 1px solid var(--grey-color);
+}
+
+.modal-buttons {
+  grid-row: 3/4;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+/* Text Utilities */
+
+.colored-normal-text {
+  color: var(--grey-color);
+}
+
+/* Rating */
+
+/* footer */
+
+.footer-ele {
+  background-color: var(--primary-color);
+  width: 100%;
+  height: 6rem;
+  color: #fff;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding-bottom: 0.5rem;
+}
+
+.media-icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.social {
+  font-size: 2rem;
+  cursor: pointer;
+}
